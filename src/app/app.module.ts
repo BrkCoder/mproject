@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
-import { AppComponent } from './app.component';
+import { MenubarModule, ButtonModule, MegaMenuModule } from 'primeng/primeng';
+import { AppComponent  } from './app.component';
 
 
 @NgModule({
@@ -10,7 +10,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MenubarModule,
+    ButtonModule,
+    MegaMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
